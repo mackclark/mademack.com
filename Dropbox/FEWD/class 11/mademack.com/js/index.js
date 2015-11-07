@@ -1,14 +1,14 @@
 
-$(window).scroll(function() {
+$(window).on("scroll", (function() {
+	console.log($(this).scrollTop())
 
     if ($(this).scrollTop()>0)
      {
-        $('#carrot').fadeOut(500);
+        $('i.fa').addClass("fade");
      }
-    else
-     {
-      $('#carrot').fadeIn(500);
+    else{
+      $('i.fa').removeClass("fade");
      }
- });
+ }));
 
 
