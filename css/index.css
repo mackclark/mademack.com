@@ -35,11 +35,13 @@ i.fa.fade{
 }
 .example{
 	padding: 2%;
-	max-height: 300px;
+	max-width: 100%;
 	/*border: solid black 2px;*/
 }
 .example:hover{
-	width: 120%;
+	-ms-transform: scale(1.2,1.2);
+	-webkit-transform: scale(1.2,1.2);
+	transform: scale(1.2,1.2);
 }
 .bottom-row{
 	margin-bottom: 5%;
@@ -56,8 +58,9 @@ i.fa.fade{
 	font-size: 1.5em;
 }
 .photologo{
-	margin-top: 60%;
+	margin-top: 10%;
 	padding-bottom: 0%;
+	max-width: 300px;
 }
 .contact{
 	color: black;
@@ -79,6 +82,13 @@ i.fa.fade{
 		position: relative;
 		height: 100%;
 	}
+@media (min-width: 1200px){
+	#logo{
+		padding-top: 10%;
+	}
+
+}
+
 @media (max-width: 480px){
 	body h1{
 		font-size: 2.5em;
@@ -92,7 +102,12 @@ i.fa.fade{
 	.contact{
 		font-size: 3em;
 	}
-	
+	.photologo{
+		max-width: 100%;
+	}
+	.example:hover{
+		transform: none;
+	}
 }
 
 /*
