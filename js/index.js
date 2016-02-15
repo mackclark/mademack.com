@@ -2,10 +2,10 @@
 $(window).on("scroll", (function() {
     if ($(this).scrollTop()>0)
      {
-        $('i.fa').addClass("fade");
+        $('i.fa-chevron-down').addClass("fade");
      }
     else{
-      $('i.fa').removeClass("fade");
+      $('i.fa-chevron-down').removeClass("fade");
      }
  }));
 
